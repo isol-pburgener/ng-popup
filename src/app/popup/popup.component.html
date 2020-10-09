@@ -1,0 +1,7 @@
+<div class="backdrop" *ngIf="show">
+</div>
+<div *ngIf="show" class="popup-container" (click)="click($event)">
+    <div #popup class="popup-content" [ngClass]="popupClasses">
+        <ng-content></ng-content>
+    </div>
+</div>

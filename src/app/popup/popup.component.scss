@@ -1,0 +1,35 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: black;
+    opacity: 0.2;
+}
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    z-index: 101;
+}
+.popup-content {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: white;
+    height: fit-content;
+    &.small {
+        width: 30%;
+    }
+    &.medium {
+        width: 60%;
+    }
+    &.large {
+        width: 100%;
+    }
+}

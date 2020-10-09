@@ -1,0 +1,15 @@
+<div>
+  <p>Popup1 wurde {{countClosed1}} Mal geschlossen</p>
+  <p>Popup2 wurde {{countClosed2}} Mal geschlossen</p>
+</div>
+
+<button (click)="open1()">Variante 1</button>
+<button (click)="open2()">Variante 2</button>
+
+<isol-popup #popup1 [show]="show1" (backdropClick)="close1()">
+  <p>Popup1 wurde {{countOpened1}} Mal geöffnet</p>
+</isol-popup>
+<isol-popup #popup2 size="medium">
+  <p>Popup2 wurde {{countOpened2}} Mal geöffnet</p>
+  <button (click)="close2()">Schliesen</button>
+</isol-popup>
